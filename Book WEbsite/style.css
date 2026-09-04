@@ -550,27 +550,22 @@ html {
   opacity: 0.75;
   transform: translateY(-1px);
 }
+/* iPhone Journey layout fix */
+@supports (-webkit-touch-callout: none) {
+  @media (max-width: 480px) {
 
- /* iPhone Safari text sizing fix */
-html,
-body {
-  -webkit-text-size-adjust: none;
-  text-size-adjust: none;
-}
+    #journey .wrap {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
 
-@media (max-width: 480px) {
-  .journey-text {
-    width: 100%;
-  }
-
-  .journey-text p {
-    width: 100%;
-    max-width: none;
-    font-size: 16px !important;
-    line-height: 1.75;
-    text-align: left;
-    word-break: normal;
-    overflow-wrap: normal;
-    white-space: normal;
+    .journey-text p {
+      width: 100%;
+      max-width: 100%;
+      font-size: 14px !important;
+      line-height: 1.7;
+      letter-spacing: 0;
+    }
   }
 }
+  
