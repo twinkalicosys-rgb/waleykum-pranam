@@ -550,3 +550,17 @@ html {
   opacity: 0.75;
   transform: translateY(-1px);
 }
+
+/* iPhone / small-screen Hindi text fix */
+@media (max-width: 480px) {
+  .journey-text p {
+    max-width: 100%;
+    width: 100%;
+    font-size: 1rem;
+    line-height: 1.8;
+    text-align: left;
+    word-break: normal;
+    overflow-wrap: normal;
+    white-space: normal;
+  }
+}
