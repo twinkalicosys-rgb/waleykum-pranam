@@ -551,13 +551,23 @@ html {
   transform: translateY(-1px);
 }
 
-/* iPhone / small-screen Hindi text fix */
+ /* iPhone Safari text sizing fix */
+html,
+body {
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
 @media (max-width: 480px) {
-  .journey-text p {
-    max-width: 100%;
+  .journey-text {
     width: 100%;
-    font-size: 1rem;
-    line-height: 1.8;
+  }
+
+  .journey-text p {
+    width: 100%;
+    max-width: none;
+    font-size: 16px !important;
+    line-height: 1.75;
     text-align: left;
     word-break: normal;
     overflow-wrap: normal;
