@@ -488,6 +488,7 @@
 
 .journey-photo {
   height: auto;
+  aspect-ratio: auto;
   overflow: visible;
 }
 
